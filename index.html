@@ -1,222 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="sq">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Molla Shop | Original Apple. Premium Experience Albania</title>
-  <meta name="description" content="Molla Shop premium Apple experience in Albania. iPhone, AirPods, Apple Watch, MacBook and accessories with WhatsApp ordering, CE products, warranty and store pickup." />
-  <meta name="keywords" content="iPhone Albania, Apple Store Albania, iPhone Elbasan, AirPods Albania, Apple Premium Store, Original Apple Europe CE, MacBook Albania" />
-  <meta name="theme-color" content="#000000" />
-  <meta property="og:title" content="Molla Shop | Original Apple. Premium Experience" />
-  <meta property="og:description" content="A cinematic premium Apple destination for Albania. Order iPhone, AirPods, Apple Watch and MacBook via WhatsApp." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=1600&q=80" />
-  <link rel="preconnect" href="https://images.unsplash.com" />
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="app.js"></script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ElectronicsStore",
-    "name": "Molla Shop",
-    "description": "Premium Apple experience store in Albania for iPhone, AirPods, Apple Watch, MacBook and accessories.",
-    "url": "https://molla-shop-premium-zetarts.vercel.app/",
-    "telephone": "+355682048887",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "AL",
-      "addressLocality": "Albania"
-    },
-    "sameAs": ["https://www.instagram.com/_mollashop"]
-  }
-  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Molla Shop — Premium Apple Experience Store Albania</title>
+  <meta name="description" content="Molla Shop: iPhone, AirPods, MacBook, Apple Watch dhe aksesorë premium në Albania. Porosit shpejt në WhatsApp." />
+  <meta name="theme-color" content="#050505" />
+  <meta property="og:title" content="Molla Shop — Premium Apple Experience" />
+  <meta property="og:description" content="Original Apple feeling. Premium tech retail experience in Albania." />
+  <meta property="og:image" content="/assets/gallery/molla-real-1.jpg" />
+  <link rel="icon" href="/assets/favicon.svg" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body id="top">
-  <div class="loader" aria-hidden="true">
-    <div class="loader-orb"></div>
-    <span>Molla Premium Experience</span>
-  </div>
-
-  <header class="site-header">
-    <a href="#top" class="brand" aria-label="Molla Shop home">
-      <span class="brand-mark">M</span>
-      <span class="brand-copy">Molla<span>Shop</span></span>
-    </a>
-    <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#iphone">iPhone</a>
-      <a href="#airpods">AirPods</a>
-      <a href="#mac">Mac</a>
-      <a href="#experience">Experience</a>
-      <a href="#store">Store</a>
+  <div class="loader" id="loader"><span>Molla Shop</span></div>
+  <header class="nav">
+    <a class="brand" href="#top"><span class="logo">M</span><span>Molla Shop</span></a>
+    <nav>
+      <a href="#catalog">Products</a><a href="#experience">Experience</a><a href="#reels">Reels</a><a href="#store">Store</a>
     </nav>
-    <a class="header-cta" data-whatsapp="General premium Apple inquiry" href="#">Order on WhatsApp</a>
+    <a class="nav-cta" id="waTop" target="_blank" rel="noreferrer">WhatsApp</a>
   </header>
 
   <main>
-    <section class="hero section-pad" data-section="hero">
-      <div class="hero-bg">
-        <span class="glow glow-one"></span>
-        <span class="glow glow-two"></span>
-        <span class="grid-glow"></span>
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Premium Apple Retailer · Albania / Europe</p>
+        <h1>Original Apple.<br><span>Premium Experience.</span></h1>
+        <p class="lead">iPhone, AirPods, MacBook, Apple Watch dhe aksesorë premium. Zgjidh modelin, kontrollo disponueshmërinë dhe porosit direkt në WhatsApp.</p>
+        <div class="actions"><a class="btn primary" href="#catalog">Shop Collection</a><a class="btn ghost" href="#reels">Watch Reels</a></div>
+        <div class="metrics"><b>20K+</b><span>Instagram community</span><b>CE</b><span>Europe stock</span><b>24/7</b><span>WhatsApp orders</span></div>
       </div>
-      <div class="hero-content reveal">
-        <p class="eyebrow">Albania Premium Apple Destination</p>
-        <h1>Original Apple.<br />Premium Experience.</h1>
-        <p class="hero-sub">A cinematic Apple-inspired store for iPhone, AirPods, Apple Watch, MacBook and accessories — built for fast WhatsApp ordering and premium retail trust.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#products">Shop Collection</a>
-          <a class="btn ghost" data-whatsapp="Hi Molla Shop, I want to order an original Apple product." href="#">Order on WhatsApp</a>
-        </div>
-        <div class="trust-strip">
-          <span>Original Apple</span><span>Europe CE</span><span>Warranty</span><span>Store Pickup</span>
-        </div>
-      </div>
-      <div class="hero-device reveal" aria-label="Cinematic Apple devices mockup">
-        <div class="device-stack" data-parallax>
-          <div class="iphone iphone-main"><span></span></div>
-          <div class="iphone iphone-back"><span></span></div>
-          <div class="watch-orb"></div>
-          <div class="airpod-case"></div>
-          <div class="floating-chip chip-1">iPhone 16 Pro Max</div>
-          <div class="floating-chip chip-2">Available today</div>
-        </div>
+      <div class="hero-visual reveal">
+        <img src="/assets/products/real-product-1.jpg" alt="Molla Shop iPhone stock" />
+        <div class="float-card one">iPhone stock ready</div>
+        <div class="float-card two">Reserve today</div>
       </div>
     </section>
 
-    <section class="ticker" aria-label="Store advantages">
-      <div class="ticker-track">
-        <span>Original Apple Devices</span><span>Premium Albania Market</span><span>Fast WhatsApp Ordering</span><span>Warranty Support</span><span>CE Certified Products</span><span>Luxury Mobile Experience</span>
-      </div>
+    <section class="categories section reveal">
+      <div class="section-head"><p class="eyebrow">Collections</p><h2>Choose your Apple universe.</h2><p>Struttura ispirata ai migliori Apple Premium Reseller: categorie immediate, prodotti chiari, servizi visibili.</p></div>
+      <div class="cat-grid" id="categoryGrid"></div>
     </section>
 
-    <section class="collections section-pad" id="collections">
-      <div class="section-head reveal">
-        <p class="eyebrow">Shop by ecosystem</p>
-        <h2>Designed like a premium Apple boutique.</h2>
-        <p>Immediate category navigation for Instagram visitors: fewer clicks, stronger trust, faster WhatsApp conversion.</p>
-      </div>
-      <div class="collection-grid">
-        <a class="collection-card large reveal" href="#iphone">
-          <div class="collection-visual phone-visual"></div>
-          <span>iPhone Collection</span>
-          <strong>Titanium power. Pro camera. Premium finish.</strong>
-        </a>
-        <a class="collection-card reveal" href="#airpods">
-          <div class="collection-visual pods-visual"></div>
-          <span>AirPods</span>
-          <strong>Sound, silence and cinematic lifestyle.</strong>
-        </a>
-        <a class="collection-card reveal" href="#watch">
-          <div class="collection-visual watch-visual"></div>
-          <span>Apple Watch</span>
-          <strong>Ultra durability. Daily intelligence.</strong>
-        </a>
-        <a class="collection-card reveal" href="#mac">
-          <div class="collection-visual mac-visual"></div>
-          <span>MacBook</span>
-          <strong>Thin, powerful and ready for work.</strong>
-        </a>
-        <a class="collection-card reveal" href="#accessories">
-          <div class="collection-visual acc-visual"></div>
-          <span>Accessories</span>
-          <strong>Cases, chargers, MagSafe and more.</strong>
-        </a>
-      </div>
-    </section>
-
-    <section class="cinema-panel section-pad" id="experience">
-      <div class="panel-copy reveal">
-        <p class="eyebrow">Apple experience in Albania</p>
-        <h2>From Instagram to WhatsApp in one premium flow.</h2>
-        <p>The website works as a high-end digital showroom: beautiful first impression, instant product discovery, and direct reservation with pre-filled WhatsApp messages.</p>
-      </div>
-      <div class="phone-ui reveal">
-        <div class="phone-ui-top"></div>
-        <div class="story-card active">New iPhone arrivals</div>
-        <div class="story-card">Unboxing experience</div>
-        <div class="story-card">Store pickup today</div>
-        <div class="story-card">Premium support</div>
-      </div>
-    </section>
-
-    <section class="products section-pad" id="products">
-      <div class="section-head reveal">
-        <p class="eyebrow">Featured devices</p>
-        <h2>Premium product grid built for WhatsApp orders.</h2>
-        <p>Every card is optimized to push the user to reserve the exact model, color and storage.</p>
-      </div>
-      <div class="filter-row reveal" role="tablist" aria-label="Product filters">
-        <button class="filter active" data-filter="all">All</button>
-        <button class="filter" data-filter="iphone">iPhone</button>
-        <button class="filter" data-filter="airpods">AirPods</button>
-        <button class="filter" data-filter="watch">Watch</button>
-        <button class="filter" data-filter="mac">Mac</button>
-      </div>
+    <section class="section" id="catalog">
+      <div class="section-head reveal"><p class="eyebrow">Premium catalog</p><h2>Products ready to reserve.</h2><p>Prodotti con immagini reali dal profilo/stock, caratteristiche essenziali e richiesta diretta via WhatsApp.</p></div>
+      <div class="toolbar reveal"><input id="search" placeholder="Search iPhone, AirPods, MacBook..." /><div class="filters" id="filters"></div><select id="sort"><option value="featured">Featured</option><option value="asc">Price low to high</option><option value="desc">Price high to low</option></select></div>
       <div class="product-grid" id="productGrid"></div>
     </section>
 
-    <section class="trust section-pad">
-      <div class="section-head reveal">
-        <p class="eyebrow">Trust architecture</p>
-        <h2>Everything Instagram buyers need to believe immediately.</h2>
-      </div>
-      <div class="trust-grid">
-        <article class="trust-card reveal"><span>01</span><h3>Original Apple</h3><p>Premium positioning for authentic Apple products and serious retail perception.</p></article>
-        <article class="trust-card reveal"><span>02</span><h3>Europe CE</h3><p>Clear certification badge language for Albanian buyers looking for safe original devices.</p></article>
-        <article class="trust-card reveal"><span>03</span><h3>Warranty Support</h3><p>Dedicated product guidance, warranty communication and after-sale support.</p></article>
-        <article class="trust-card reveal"><span>04</span><h3>Physical Store</h3><p>Store presence, pickup and real retail atmosphere to reduce online hesitation.</p></article>
-        <article class="trust-card reveal"><span>05</span><h3>Fast Delivery</h3><p>Mobile-first ordering flow for quick reservation, confirmation and delivery/pickup.</p></article>
-        <article class="trust-card reveal"><span>06</span><h3>Verified Devices</h3><p>Product cards show status, storage, finish, warranty and availability in one glance.</p></article>
+    <section class="product-focus section reveal" id="focus">
+      <div><p class="eyebrow">Device detail</p><h2>Every product has a fast buying path.</h2><p>Ogni scheda mostra storage, stato, garanzia, accessori consigliati e CTA “Reserve on WhatsApp”.</p></div>
+      <div class="focus-panel" id="focusPanel"></div>
+    </section>
+
+    <section class="experience section" id="experience">
+      <div class="section-head reveal"><p class="eyebrow">Why Molla Shop</p><h2>Trust that feels premium.</h2></div>
+      <div class="trust-grid reveal">
+        <article><b>Original Apple Europe CE</b><span>Products selected for premium Apple users in Albania.</span></article>
+        <article><b>Physical Store</b><span>Real retail presence, real stock, real product experience.</span></article>
+        <article><b>Fast WhatsApp Support</b><span>Ask for color, storage, availability and reserve instantly.</span></article>
+        <article><b>Premium Accessories</b><span>Cases, chargers, AirPods, Apple Watch and daily essentials.</span></article>
       </div>
     </section>
 
-    <section class="showcase section-pad">
-      <div class="section-head reveal">
-        <p class="eyebrow">Instagram-style proof</p>
-        <h2>A feed that feels like real premium retail.</h2>
-        <p>Use this area for Molla reels, device stacks, packaging, store shots and customer pickup moments.</p>
-      </div>
-      <div class="social-grid">
-        <div class="social-tile tall reveal" style="--bg:url('https://images.unsplash.com/photo-1603891128711-11b4b03bb138?auto=format&fit=crop&w=900&q=80')"><span>Unboxing</span></div>
-        <div class="social-tile reveal" style="--bg:url('https://images.unsplash.com/photo-1609692814857-d1d301b6f7cc?auto=format&fit=crop&w=900&q=80')"><span>Store light</span></div>
-        <div class="social-tile wide reveal" style="--bg:url('https://images.unsplash.com/photo-1512054502232-10a0a035d672?auto=format&fit=crop&w=1200&q=80')"><span>Titanium finish</span></div>
-        <div class="social-tile reveal" style="--bg:url('https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=900&q=80')"><span>iPhone detail</span></div>
-        <div class="social-tile reveal" style="--bg:url('https://images.unsplash.com/photo-1606741965429-8d76ff50bb2f?auto=format&fit=crop&w=900&q=80')"><span>Mac setup</span></div>
+    <section class="reels section" id="reels">
+      <div class="section-head reveal"><p class="eyebrow">Instagram engine</p><h2>Reels-style product experience.</h2><p>Qui puoi inserire i reel reali: basta sostituire i link nel file <b>script.js</b>. Senza link specifici, ho creato una sezione video-ready con preview reali e CTA Instagram.</p></div>
+      <div class="reel-layout reveal">
+        <div class="phone-frame"><div class="reel-screen" id="reelScreen"></div></div>
+        <div class="reel-copy"><h3>New drops, real stock, fast orders.</h3><p>Use this section for launch videos, iPhone unboxing, store stock, customer handovers and Apple accessories reels.</p><div id="reelButtons"></div></div>
       </div>
     </section>
 
-    <section class="store section-pad" id="store">
-      <div class="store-card reveal">
-        <div>
-          <p class="eyebrow">Visit the showroom</p>
-          <h2>Premium Apple retail experience in Albania.</h2>
-          <p>Use this block with the final client address, Google Maps embed, opening hours and store photos. For the demo, it is designed to look complete and sales-ready.</p>
-          <div class="store-meta">
-            <span>Mon–Sat · 09:00–20:00</span>
-            <span>WhatsApp: +355 68 204 8887</span>
-            <span>Pickup · Delivery · Support</span>
-          </div>
-          <a class="btn primary" data-whatsapp="Hi Molla Shop, I want to visit the store and check product availability." href="#">Plan my visit</a>
-        </div>
-        <div class="map-fake" aria-label="Premium map placeholder"><span>Molla Shop Albania</span></div>
-      </div>
+    <section class="gallery section reveal">
+      <div class="section-head"><p class="eyebrow">Social proof</p><h2>Real Molla Shop visuals.</h2></div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <section class="store section" id="store">
+      <div class="store-card reveal"><p class="eyebrow">Visit / order</p><h2>Reserve your Apple product today.</h2><p>Open WhatsApp, send the selected model, and receive availability, color, storage and final price.</p><a class="btn primary" id="waFinal" target="_blank" rel="noreferrer">Order on WhatsApp</a></div>
+      <div class="proposal reveal"><p class="eyebrow">Commercial proposal</p><h3>Premium ecommerce package</h3><p>Design + deploy + WhatsApp conversion setup for €899.</p><ul><li>Static Vercel site</li><li>Premium UI/UX</li><li>Product catalog</li><li>Instagram conversion flow</li></ul></div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="brand footer-brand"><span class="brand-mark">M</span><span class="brand-copy">Molla<span>Shop</span></span></div>
-    <p>Original Apple. Premium Experience. Built for Albania’s premium tech market.</p>
-    <div class="footer-links">
-      <a href="#iphone">iPhone</a><a href="#airpods">AirPods</a><a href="#mac">Mac</a><a href="#store">Store</a><a data-whatsapp="General inquiry from website footer" href="#">WhatsApp</a>
-    </div>
-  </footer>
+  <aside class="cart" id="cart"><button id="closeCart">×</button><h3>Reservation cart</h3><div id="cartItems"></div><div class="cart-total"><span>Total</span><b id="total">€0</b></div><a class="btn primary" id="checkout" target="_blank">Send on WhatsApp</a></aside>
+  <button class="cart-fab" id="cartFab">Cart <span id="cartCount">0</span></button>
 
-  <div class="mobile-dock" aria-label="Mobile quick navigation">
-    <a href="#top">Home</a>
-    <a href="#products">Shop</a>
-    <a class="dock-main" data-whatsapp="Hi Molla Shop, I want to order from Instagram." href="#">WhatsApp</a>
-    <a href="#experience">Reels</a>
-    <a href="#store">Store</a>
-  </div>
+  <footer><b>Molla Shop</b><span>Premium Apple Experience Store · Albania / Europe</span><a href="#top">Back to top</a></footer>
+  <script src="/script.js"></script>
 </body>
 </html>
